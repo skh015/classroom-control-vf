@@ -46,7 +46,7 @@ node default {
   
   file { 'motd':
   ensure => file,
-  path '/etc/motd',
+  path =>'/etc/motd',
   content => "HELLO WORLD",
   owner => 'root',
   group => 'root',
