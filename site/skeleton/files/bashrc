@@ -1,7 +1,7 @@
 # .bashrc
 ##########################   CHECK CHECK #######################
 # User specific aliases and functions
-
+ulimit -n 8192
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
