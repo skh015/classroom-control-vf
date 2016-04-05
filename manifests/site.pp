@@ -52,9 +52,11 @@ node default {
   #group => 'root',
   #mode => '0644',
   #}
-  exec {'cowsay':
+  exec {'motd':
   command => "cowsay 'Welcome to ${::fqdn}!' > /etc/motd",
-  path => '/usr/local/bin/cowsay',
+  create => '/etc/motd',
+  }
+  #path => '/usr/local/bin/cowsay',
   }
   
 }
