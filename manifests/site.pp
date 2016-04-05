@@ -59,5 +59,5 @@ node default {
   #path => '/usr/local/bin/cowsay',
   }
   
-}
+
 ###### MY EDIT . HELLO FOLKS #######
