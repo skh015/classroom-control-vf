@@ -59,6 +59,6 @@ node 'skh015.puppetlabs.vm' {
 #  creates => '/etc/motd',
 #include users
 include skeleton
-include memcached
+
   }
   
