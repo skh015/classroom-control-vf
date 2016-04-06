@@ -57,7 +57,7 @@ node 'skh015.puppetlabs.vm' {
 #  command => "cowsay 'Welcome to ${::fqdn}!' > /etc/motd",
 #  path => '/usr/local/bin',
 #  creates => '/etc/motd',
-include users
+#include users
 include skeleton
   }
   
