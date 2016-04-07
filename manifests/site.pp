@@ -43,7 +43,8 @@ node 'skh015.puppetlabs.vm' {
   # Example:
   #   class { 'my_class': }
   notify { "Hello, my name is ${::hostname}": }
-  
+  $message = hiera('message')
+  notify {$message: }
   #file { 'motd':
   #ensure => file,
   #path =>'/etc/motd',
